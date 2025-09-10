@@ -1,4 +1,4 @@
-##Linux over Windows
+#Linux over Windows
 
 #Cost-Effectiveness:
 
@@ -15,3 +15,4 @@ Frequent and Transparent Updates: Regular security patches ensure system stabili
 
 #High Stability: 
 Linux systems can run for years without crashes, ensuring better uptime and reliability.
+
