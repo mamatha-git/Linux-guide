@@ -8,6 +8,7 @@ Modes in VI Editor
 
 ● Command Mode – Used for saving, quitting, and searching (press : in Normal mode).
 
+
 Basic Navigation
 
 ● h – Move left
@@ -34,6 +35,7 @@ Basic Navigation
 
 ● :n – Move to line number n
 
+
 Insert Mode Shortcuts
 
 ● i – Insert before cursor
@@ -49,6 +51,7 @@ Insert Mode Shortcuts
 ● O – Open a new line above
 
 ● Esc – Exit insert mode
+
 
 Editing Text
 ● x – Delete a character
@@ -77,6 +80,7 @@ Editing Text
 
 ● P – Paste before the cursor
 
+
 Search and Replace
 
 ● /pattern – Search forward for a pattern
@@ -90,6 +94,7 @@ Search and Replace
 ● :%s/old/new/g – Replace all occurrences of "old" with "new"
 
 ● :s/old/new/g – Replace all occurrences in the current line
+
 
 Working with Multiple Files
 
@@ -106,6 +111,7 @@ Working with Multiple Files
 ● :vsplit filename – Split screen vertically
 
 ● Ctrl + w + w – Switch between split screens
+
 
 
 
