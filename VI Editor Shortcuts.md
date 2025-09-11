@@ -54,6 +54,7 @@ Insert Mode Shortcuts
 
 
 Editing Text
+
 ● x – Delete a character
 
 ● X – Delete a character before cursor
@@ -111,6 +112,7 @@ Working with Multiple Files
 ● :vsplit filename – Split screen vertically
 
 ● Ctrl + w + w – Switch between split screens
+
 
 
 
