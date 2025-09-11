@@ -2,9 +2,9 @@
 
 Modes in VI Editor
 
-Normal Mode (default) – Used for navigation and command execution.
-Insert Mode – Used for text editing (press i to enter, Esc to exit).
-Command Mode – Used for saving, quitting, and searching (press : in Normal mode).
+● Normal Mode (default) – Used for navigation and command execution.
+● Insert Mode – Used for text editing (press i to enter, Esc to exit).
+● Command Mode – Used for saving, quitting, and searching (press : in Normal mode).
 
 Basic Navigation
 h – Move left
@@ -60,4 +60,5 @@ Working with Multiple Files
 :split filename – Split screen horizontally and open another file
 :vsplit filename – Split screen vertically
 Ctrl + w + w – Switch between split screens
+
 
