@@ -1,9 +1,9 @@
-#User Management in Linux
+# User Management in Linux
 
 Introduction to User Management in Linux
 Linux is a multi-user operating system, meaning multiple users can operate on a system simultaneously. Proper user management ensures security, controlled access, and system integrity.
 
-#Key files involved in user management:
+## Key files involved in user management:
 
 ● /etc/passwd – Stores user account details.
 
@@ -128,3 +128,4 @@ Then add:
 
 
 username ALL=(ALL) NOPASSWD: /path/to/command
+
