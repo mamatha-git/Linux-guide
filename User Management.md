@@ -15,24 +15,17 @@ Linux is a multi-user operating system, meaning multiple users can operate on a 
 
 # Creating Users in Linux
 
-To create a new user in Linux, use:
+● To create a new user in Linux, use:
 
-useradd Command (For most Linux distributions)
+useradd username --- This creates a user without a home directory.
 
-useradd username
+adduser username ----This create a user with a home directory:
 
-This creates a user without a home directory.
-
-To create a user with a home directory:
-
-useradd -m username
-
-
-To specify a shell:
+● To specify a shell:
 
 useradd -s /bin/bash username
 
-adduser Command (For Debian-based systems)
+## adduser Command (For Debian-based systems)
 
 adduser username
 
@@ -128,4 +121,5 @@ Then add:
 
 
 username ALL=(ALL) NOPASSWD: /path/to/command
+
 
