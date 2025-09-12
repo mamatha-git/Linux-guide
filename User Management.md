@@ -13,7 +13,7 @@ Linux is a multi-user operating system, meaning multiple users can operate on a 
 
 ● /etc/gshadow – Stores secure group details.
 
-# Creating Users in Linux
+## Creating Users in Linux
 
 ● To create a new user in Linux, use:
 
@@ -31,7 +31,7 @@ adduser username
 
 This is an interactive command that asks for a password and additional details.
 
-# Managing User Passwords
+## Managing User Passwords
 
 To set or change a user’s password:
 
@@ -52,7 +52,7 @@ passwd -l username
 passwd -u username
 
 
-# Modifying Users
+## Modifying Users
 
 Modify an existing user with usermod:
 
@@ -66,7 +66,7 @@ usermod -d /new/home/directory -m username
 
 ● Change the default shell:
 
-# usermod -s /bin/zsh username
+## usermod -s /bin/zsh username
 
 Deleting Users
 
@@ -96,9 +96,9 @@ groups username
 
 usermod -g new_primary_group username
 
-# Sudo Access and Privilege Escalation
+## Sudo Access and Privilege Escalation
 
-# Adding a User to Sudo Group
+##Adding a User to Sudo Group
 
 ● On Debian-based systems:
 
@@ -108,7 +108,7 @@ usermod -aG sudo username
 
 usermod -aG wheel username
 
-# Granting Specific Commands with Sudo
+## Granting Specific Commands with Sudo
 
 ● Edit the sudoers file:
 
@@ -121,5 +121,6 @@ Then add:
 
 
 username ALL=(ALL) NOPASSWD: /path/to/command
+
 
 
