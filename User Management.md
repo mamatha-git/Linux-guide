@@ -25,7 +25,7 @@ adduser username ----This create a user with a home directory:
 
 useradd -s /bin/bash username
 
-## adduser Command (For Debian-based systems)
+### adduser Command (For Debian-based systems)
 
 adduser username
 
@@ -66,9 +66,9 @@ usermod -d /new/home/directory -m username
 
 ● Change the default shell:
 
-## usermod -s /bin/zsh username
+usermod -s /bin/zsh username
 
-Deleting Users
+## Deleting Users
 
 ● To remove a user but keep their home directory:
 
@@ -121,6 +121,7 @@ Then add:
 
 
 username ALL=(ALL) NOPASSWD: /path/to/command
+
 
 
 
