@@ -116,7 +116,8 @@ visudo
 
 Then add:
 
-● username ALL=(ALL) NOPASSWD: /path/to/command
+username ALL=(ALL) NOPASSWD: /path/to/command
+
 
 
 
