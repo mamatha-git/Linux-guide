@@ -33,7 +33,7 @@ This is an interactive command that asks for a password and additional details.
 
 ## Managing User Passwords
 
-To set or change a user’s password:
+● To set or change a user’s password:
 
 passwd username
 
@@ -120,7 +120,7 @@ Then add:
 
 
 
-username ALL=(ALL) NOPASSWD: /path/to/command
+
 
 
 
