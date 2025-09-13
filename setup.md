@@ -1,14 +1,14 @@
-Here’s the information organized into a **clear format with tables**:
 
----
+# **Setup Linux Environment on Windows & macOS using Docker**
 
-## 🐧 **Setup Linux Environment on Windows & macOS using Docker**
+There are multiple ways to setup a Linux environment on a Windows or Mac machines such as cloud vm, wsl2, virtualbox, Hyperkit e.t.c.,. However what I would recommend is using a container as a Linux environment.
 
-### ✅ **Steps for Windows Host**
+Just install Docker desktop, run the below command and create linux container of any distribution without worrying about the cost and connectivity issues.
 
-1. Install **Docker Desktop** on Windows.
-2. Create a folder named **ubuntu-data** in your Downloads folder.
-3. Run the following command in **PowerShell** (update your username in the path):
+## Docker Command to Run Ubuntu Linux Container in windows host (Persistent & Long-Term)
+* Create a folder with name ubuntu-data in your downloads folder.
+
+* Then run the below command in poweshell updating your username.
 
 ```powershell
 docker run -dit `
@@ -28,11 +28,8 @@ docker run -dit `
 
 ---
 
-### ✅ **Steps for macOS or Linux Host**
+## Docker Command to Run Ubuntu Linux Container in mac or linux host (Persistent & Long-Term)
 
-1. Install **Docker Desktop** on macOS/Linux.
-2. Create a folder named **ubuntu-data** in `/tmp`.
-3. Run this command in **Terminal**:
 
 ```bash
 docker run -dit \
@@ -52,7 +49,7 @@ docker run -dit \
 
 ---
 
-## 📋 **Explanation of Each Parameter**
+##  **Explanation of Each Parameter**
 
 | **Parameter**                                  | **Description**                                                                            |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -70,6 +67,7 @@ docker run -dit \
 | `--env LANG=en_US.UTF-8`                       | Sets the **language settings** inside the container.                                       |
 | `ubuntu:latest /bin/bash`                      | Uses the **latest Ubuntu image** and runs **Bash shell**.                                  |
 
----
 
-This format makes it easy to **copy-paste** and understand both the commands and their explanations.
+
+
+
