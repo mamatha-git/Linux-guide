@@ -78,7 +78,7 @@ userdel username
 
 userdel -r username
 
-# Working with Groups
+## Working with Groups
 
 ● Creating Groups
 
@@ -117,6 +117,7 @@ visudo
 Then add:
 
 username ALL=(ALL) NOPASSWD: /path/to/command
+
 
 
 
