@@ -43,117 +43,94 @@ Each process has a unique **Process ID (PID)** and belongs to a **parent process
 
 
 ##  Viewing Process Details
+
 ### Using **ps**
-- Show processes for a specific user:  
-  ```bash
+ Show processes for a specific user:  
+  
   ps -u username
-````
 
-* Show a process by name:
+ Show a process by name:
 
-  ```bash
   ps -C processname
-  ```
 
 ### Using **pgrep**
 
-* Find a process by name and return its PID:
+ Find a process by name and return its PID:
 
-  ```bash
   pgrep processname
-  ```
 
 ### Using **pidof**
 
-* Find the PID of a running program:
+ Find the PID of a running program:
 
-  ```bash
   pidof processname
-  ```
 
----
 
-## 🛑 Managing Processes
+## Managing Processes
 
 ### Killing Processes
 
-* Terminate by PID:
+ Terminate by PID:
 
-  ```bash
   kill PID
-  ```
-* Terminate by process name:
 
-  ```bash
+Terminate by process name:
+
   pkill processname
-  ```
-* Force kill a process:
 
-  ```bash
+ Force kill a process:
+
   kill -9 PID
-  ```
-* Kill all instances of a process:
+ 
+ Kill all instances of a process:
 
-  ```bash
   pkill -9 processname
-  ```
 
 ### Stopping & Resuming Processes
 
-* Stop a running process:
-
-  ```bash
+ Stop a running process:
+ 
   kill -STOP PID
-  ```
-* Resume a stopped process:
 
-  ```bash
+ Resume a stopped process:
+
   kill -CONT PID
-  ```
 
 ### Changing Process Priority
 
-* View process priorities:
+View process priorities:
 
-  ```bash
   top  # Look at the NI column
-  ```
-* Change priority of a running process:
 
-  ```bash
+Change priority of a running process:
+
   renice -n 10 -p PID  # Lower priority (positive values)
+  
   renice -n -5 -p PID  # Higher priority (negative values, root required)
-  ```
 
----
 
-## ⚙ Running Processes in the Background
+##  Running Processes in the Background
 
-* Run a command in the background:
+ Run a command in the background:
 
-  ```bash
   command &
-  ```
-* List background jobs:
+ 
+ List background jobs:
 
-  ```bash
   jobs
-  ```
-* Bring a job to the foreground:
 
-  ```bash
+Bring a job to the foreground:
+
   fg %jobnumber
-  ```
-* Send a running process to the background:
+  
+ Send a running process to the background:
 
-  ```bash
   Ctrl + Z  # Suspend process
+  
   bg %jobnumber  # Resume in background
-  ```
+ 
 
----
-
-## 📈 Monitoring System Processes
+##  Monitoring System Processes
 
 ### Using **top**
 
@@ -167,59 +144,39 @@ Interactive process viewer:
 
 A user-friendly alternative to top:
 
-```bash
 htop
-```
 
-* Allows mouse-based interaction for process management.
+ Allows mouse-based interaction for process management.
 
 ### Using **nice** & **renice**
 
-* Run a command with a specific priority:
+ Run a command with a specific priority:
 
-  ```bash
   nice -n 10 command
-  ```
-* Change the priority of an existing process:
+ 
+ Change the priority of an existing process:
 
-  ```bash
   renice -n -5 -p PID
-  ```
 
----
 
-## 🧰 Daemon Processes
+##  Daemon Processes
 
-* List all system daemons:
+ List all system daemons:
 
-  ```bash
   systemctl list-units --type=service
-  ```
-* Start a daemon:
 
-  ```bash
+ Start a daemon:
+
   systemctl start service-name
-  ```
-* Stop a daemon:
 
-  ```bash
+ Stop a daemon:
+
   systemctl stop service-name
-  ```
-* Enable a service at startup:
+  
+ Enable a service at startup:
 
-  ```bash
   systemctl enable service-name
-  ```
+ 
 
----
 
-## ✅ Conclusion
-
-Process management is **crucial** for system performance and stability.
-By using tools like **ps**, **top**, **htop**, **kill**, and **nice**, you can **efficiently control and monitor Linux processes**.
-
-```
-
-This `.md` file is properly formatted for **GitHub**, with clear headings, bullet points, and fenced code blocks for commands. Save it as `process_management.md` and push it to your repository.
-```
 
