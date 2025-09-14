@@ -53,11 +53,10 @@ Each process has a unique **Process ID (PID)** and belongs to a **parent process
   ps -u username
 ````
 
-* Show a process by name:
+ - Show a process by name:
 
-  ```bash
   ps -C processname
-  ```
+  
 
 ### Using **pgrep**
 
@@ -216,6 +215,7 @@ htop
   ```
 
 ---
+
 
 
 
