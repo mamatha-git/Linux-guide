@@ -1,23 +1,21 @@
-Here’s a **well-formatted Markdown file** you can directly push to GitHub:
 
-````markdown
-# 🐧 Process Management in Linux
+# Process Management in Linux
 
-## 📖 Introduction
+##  Introduction
 A **process** is an instance of a running program. Linux provides multiple utilities to monitor, manage, and control processes effectively.  
 Each process has a unique **Process ID (PID)** and belongs to a **parent process**.
 
 ---
 
-## 📑 Index of Commands
-### 🔍 Viewing Processes
+##  Index of Commands
+##  Viewing Processes
 - `ps aux` – View all running processes  
 - `ps -u username` – View processes for a specific user  
 - `ps -C processname` – Show a process by name  
 - `pgrep processname` – Find a process by name and return its PID  
 - `pidof processname` – Find the PID of a running program  
 
-### 🛠 Managing Processes
+###  Managing Processes
 - `kill PID` – Terminate a process by PID  
 - `pkill processname` – Terminate a process by name  
 - `kill -9 PID` – Force kill a process  
@@ -27,20 +25,20 @@ Each process has a unique **Process ID (PID)** and belongs to a **parent process
 - `renice -n 10 -p PID` – Lower priority of a process  
 - `renice -n -5 -p PID` – Increase priority of a process (requires root)  
 
-### ⚙ Background & Foreground Processes
+###  Background & Foreground Processes
 - `command &` – Run a command in the background  
 - `jobs` – List background jobs  
 - `fg %jobnumber` – Bring a job to the foreground  
 - `Ctrl + Z` – Suspend a running process  
 - `bg %jobnumber` – Resume a suspended process in the background  
 
-### 📊 Monitoring System Processes
+###  Monitoring System Processes
 - `top` – Interactive process viewer  
 - `htop` – User-friendly process viewer (requires installation)  
 - `nice -n 10 command` – Run a command with a specific priority  
 - `renice -n -5 -p PID` – Change priority of an existing process  
 
-### 🔄 Daemon Process Management
+###  Daemon Process Management
 - `systemctl list-units --type=service` – List all system daemons  
 - `systemctl start service-name` – Start a daemon/service  
 - `systemctl stop service-name` – Stop a daemon/service  
@@ -48,7 +46,7 @@ Each process has a unique **Process ID (PID)** and belongs to a **parent process
 
 ---
 
-## 📜 Viewing Process Details
+##  Viewing Process Details
 ### Using **ps**
 - Show processes for a specific user:  
   ```bash
@@ -79,7 +77,7 @@ Each process has a unique **Process ID (PID)** and belongs to a **parent process
 
 ---
 
-## 🛑 Managing Processes
+##  Managing Processes
 
 ### Killing Processes
 
@@ -159,7 +157,7 @@ Each process has a unique **Process ID (PID)** and belongs to a **parent process
 
 ---
 
-## 📈 Monitoring System Processes
+##  Monitoring System Processes
 
 ### Using **top**
 
@@ -194,7 +192,7 @@ htop
 
 ---
 
-## 🧰 Daemon Processes
+##  Daemon Processes
 
 * List all system daemons:
 
@@ -219,12 +217,6 @@ htop
 
 ---
 
-## ✅ Conclusion
 
-Process management is **crucial** for system performance and stability.
-By using tools like **ps**, **top**, **htop**, **kill**, and **nice**, you can **efficiently control and monitor Linux processes**.
 
-```
 
-This `.md` file is properly formatted for **GitHub**, with clear headings, bullet points, and fenced code blocks for commands. Save it as `process_management.md` and push it to your repository.
-```
